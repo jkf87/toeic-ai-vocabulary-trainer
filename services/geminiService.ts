@@ -30,7 +30,7 @@ Return the response ONLY in JSON format. Do not include any other text or markdo
     "D": "reasoned"
   },
   "answer": "C",
-  "explanation": "The sentence requires a noun to serve as the subject's complement. 'Reason' is the correct noun. 'Reasoning' is a gerund or noun but refers to the process of thinking, which doesn't fit the context. 'Reasonable' is an adjective. 'Reasoned' is a verb (past tense)."
+  "explanation": "이 문장에서는 주어의 보어 역할을 하는 명사가 필요합니다. 'Reason'이 올바른 명사입니다. 'Reasoning'은 동명사나 명사이지만 사고 과정을 의미하므로 문맥에 맞지 않습니다. 'Reasonable'은 형용사입니다. 'Reasoned'는 동사(과거형)입니다."
 }
 `;
 
@@ -38,7 +38,7 @@ Return the response ONLY in JSON format. Do not include any other text or markdo
 export const generateQuizQuestion = async (): Promise<QuizQuestion> => {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash-preview-04-17",
+      model: "gemini-2.5-flash",
       contents: PROMPT,
       config: {
         responseMimeType: "application/json",
