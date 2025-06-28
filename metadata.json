@@ -1,0 +1,6 @@
+{
+  "name": "TOEIC AI Vocabulary Trainer",
+  "description": "An AI-powered app to help you master TOEIC vocabulary by generating personalized quizzes and reviewing common mistakes.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
